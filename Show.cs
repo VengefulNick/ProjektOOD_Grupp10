@@ -8,37 +8,39 @@ using System.Threading.Tasks;
 
 namespace ProjektOOD_Grupp10
 {
-    internal class Concert
+    internal class Show
     {
-        private int EventId { get; set; }
-        private string EventName { get; set; }
-        private int EventDuration { get; set; }
+        List<string> ShowList = new List<string>();
+        private int ShowId { get; set; }
+        private string ShowName { get; set; }
+        private int ShowDuration { get; set; }
         private string ReleaseDate { get; set; }
 
-        public Concert(int id, string name, int duration, string date)
+        public Show(int id, string name, int duration, string date)
         {
-            this.EventId = id;
-            this.EventName = name;
-            this.EventDuration = duration;
+            this.ShowId = id;
+            this.ShowName = name;
+            this.ShowDuration = duration;
             this.ReleaseDate = date;
         }
 
         public int GetId()
         {
-            return EventId;
+            return ShowId;
         }
         public string GetName()
         {
-            return EventName;
+            return ShowName;
         }
         public int GetDuration()
         {
-            return EventDuration;
+            return ShowDuration;
         }
         public string GetRelease()
         {
             return ReleaseDate;
         }
      
+
     }
 }

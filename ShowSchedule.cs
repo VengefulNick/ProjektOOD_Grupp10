@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjektOOD_Grupp10
 {
-    internal class EventSchedule
+    internal class ShowSchedule
     {
 
     }

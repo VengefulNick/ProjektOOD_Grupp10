@@ -13,7 +13,7 @@
                 // Admins
             Admin admin01 = new Admin(9999, "Admin", "admin@event.nu", "010-111 22 33");
                 // Events
-            Concert concert01 = new Concert(10000, "The Baks", 60, "2022-10-30");
+            Show show = new Show(10000, "Baks and the gang", 60, "2022-10-30");
                 // Scheduled Events
 
         }
