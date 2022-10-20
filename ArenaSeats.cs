@@ -13,6 +13,19 @@ namespace ProjektOOD_Grupp10
             Bench, FoldingChair
         }
 
+        int[] Seats;
 
+        private SeatType seatType;
+        private int RowNr { get; set; }
+        private int ColNr { get; set; }
+        private int TotalSeats { get; set; }
+
+        public ArenaSeats(int SeatRows, int SeatCols)
+        {
+            this.RowNr = SeatRows;
+            this.ColNr = SeatCols;
+            TotalSeats = SeatRows * SeatCols;
+        }
+        
     }
 }

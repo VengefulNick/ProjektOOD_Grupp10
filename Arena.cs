@@ -8,13 +8,21 @@ namespace ProjektOOD_Grupp10
 {
     internal class Arena
     {
-        public string ArenaName { get; set; }
-        public int TotalSeats { get; set; }
+        private string ArenaName { get; set; }
+        private int SeatRows { get; set; }
+        private int SeatCols { get; set; }
 
-        public Arena(string arenaName, int totalSeats)        {
+        public Arena(string arenaName, int SeatRows, int SeatCols)
+        {
             this.ArenaName = arenaName;
-            this.TotalSeats = totalSeats;
+            this.SeatRows = SeatRows;
+            this.SeatCols = SeatCols;
         }
 
+        public void CreateSeats(int SeatRows, int SeatCols)
+        {
+            ArenaSeats arenaSeats = new ArenaSeats(SeatRows, SeatCols);
+
+        }
     }
 }
