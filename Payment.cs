@@ -8,5 +8,6 @@ namespace ProjektOOD_Grupp10
 {
     internal class Payment
     {
+        // Method to call IPayment
     }
 }

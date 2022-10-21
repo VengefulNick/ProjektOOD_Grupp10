@@ -8,22 +8,26 @@ namespace ProjektOOD_Grupp10
 {
     internal class Customer : Person
     {
-        public Customer(int id, string name, string email, string phone)
+        public Customer(string name, string email, string phone)
         {
-            this.Id = id;
             this.Name = name;
             this.Email = email;
             this.Phone = phone;
         }
+        public void ViewAvailibleShows()
+        {
+            Console.WriteLine("Current available shows: ");
+            ShowLibrary.DisplayShowList();
+        }
 
         public void BuyTicket()
         {
-            Ticket ticket = new Ticket();
+            // Recursive / Loop Code to buy tickets for a show
         }
 
-        public void ViewTicket()
+        public void CancelTicket()
         {
-
+            //Code to Cancel Ticket
         }
     }
 }

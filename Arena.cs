@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,12 +18,6 @@ namespace ProjektOOD_Grupp10
             this.ArenaName = arenaName;
             this.SeatRows = SeatRows;
             this.SeatCols = SeatCols;
-        }
-
-        public void CreateSeats(int SeatRows, int SeatCols)
-        {
-            ArenaSeats arenaSeats = new ArenaSeats(SeatRows, SeatCols);
-
         }
     }
 }

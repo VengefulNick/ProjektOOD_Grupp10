@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace ProjektOOD_Grupp10
 {
-    internal class ArenaSeats : TicketSeat
+    internal class ArenaSeats
     {
         enum SeatType
         {
             Bench, FoldingChair
         }
-
-        int[] Seats;
 
         private SeatType seatType;
         private int RowNr { get; set; }
@@ -26,6 +25,5 @@ namespace ProjektOOD_Grupp10
             this.ColNr = SeatCols;
             TotalSeats = SeatRows * SeatCols;
         }
-        
     }
 }

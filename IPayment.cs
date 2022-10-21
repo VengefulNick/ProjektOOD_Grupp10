@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjektOOD_Grupp10
 {
-    internal class CardPay : IPayment
+    internal interface IPayment
     {
-        // Creditcard payment code goes here
+        // CODE
     }
 }

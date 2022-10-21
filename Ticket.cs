@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,15 +9,28 @@ namespace ProjektOOD_Grupp10
 {
     internal class Ticket
     {
-        private enum TicketStatus
+        private int TicketId { get; set; }
+        private string OrderDate { get; set; }
+        private int Price { get; set; }
+
+        public Ticket(int TicketId, int AmountOfTickets)
         {
-            Confirmed, Pending, Abandoned, Cancelled
+            this.TicketId = TicketId;
+            OrderDate = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
+            this.Price = 100;
         }
 
-        private uint TicketId { get; set; }
-        private int NumberOfSeats { get; set; } // Antal biljetter som ska köpas, 1-5.
-        private DateTime OrderDate;
-        private int price { get; set; }
-        private TicketStatus Status { get; set; }
+        public int GetTicketId()
+        {
+            return this.TicketId;
+        }
+        public string GetOrderDate()
+        {
+            return this.OrderDate;
+        }
+        public int GetPrice()
+        {
+            return this.Price;
+        }
     }
 }

@@ -10,37 +10,31 @@ namespace ProjektOOD_Grupp10
 {
     internal class Show
     {
-        List<string> ShowList = new List<string>();
-        private int ShowId { get; set; }
+
         private string ShowName { get; set; }
         private int ShowDuration { get; set; }
         private string ReleaseDate { get; set; }
 
-        public Show(int id, string name, int duration, string date)
+        public Show(string name, int duration, string date)
         {
-            this.ShowId = id;
             this.ShowName = name;
             this.ShowDuration = duration;
             this.ReleaseDate = date;
         }
 
-        public int GetId()
-        {
-            return ShowId;
-        }
         public string GetName()
         {
-            return ShowName;
+            return this.ShowName;
         }
+
         public int GetDuration()
         {
-            return ShowDuration;
+            return this.ShowDuration;
         }
         public string GetRelease()
         {
-            return ReleaseDate;
+            return this.ReleaseDate;
         }
-     
 
     }
 }
