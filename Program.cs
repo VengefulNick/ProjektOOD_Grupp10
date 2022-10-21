@@ -17,9 +17,16 @@ namespace ProjektOOD_Grupp10
                 // Demo Admin
             Admin DemoAdmin = new Admin("DemoAdmin", "admin@mail.se", "010-111 22 33");
 
+                // Add 100 Demo Shows
+            for (int i = 1; i < 101; i++)
+            {
+                //string name = "Number" + i.ToString();
+                Show DemoShow = new Show("Number" + i.ToString(), 60, "2022-12-24");
+                ShowLibrary.ListShow(DemoShow);
+            }
+
                 // Admin Methods Demo
-            DemoAdmin.AddShow();
-            DemoAdmin.AddShow();
+            //DemoAdmin.AddShow();
 
             // Customer Methods Demo
             DemoCustomer.ViewAvailibleShows();
