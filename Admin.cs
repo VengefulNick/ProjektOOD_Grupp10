@@ -21,12 +21,12 @@ namespace ProjektOOD_Grupp10
 
         public void AddShow()
         {
-           
+           // This code must work for DEMO!
         }
 
         public void AddShowSchedule()
         {
-
+            // Code to schedule a show goes here!
         }
 
         public void ModifyShow()
