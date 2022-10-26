@@ -10,8 +10,6 @@ namespace ProjektOOD_Grupp10
 {
     internal class Admin : Person
     {
-        //List<object> ShowList = new List<object>();
-
         public Admin(int id, string name, string email, string phone)
         {
             this.Id = id;
@@ -20,9 +18,16 @@ namespace ProjektOOD_Grupp10
             this.Phone = phone;
         }
 
+        public void GetAdminInfo()
+        {
+            Console.WriteLine($"Id: {this.Id} | Name: {this.Name} | Email: {this.Email} | Phone: {this.Phone}");
+        }
+
         public void AddShow()
         {
+            Console.WriteLine("# ADD STARTED #");
             // Code to add new show to showList
+            /*
             Console.WriteLine("Enter show name: ");
             string name = Console.ReadLine();
             Console.WriteLine(" Enter duration for show: ");
@@ -35,6 +40,17 @@ namespace ProjektOOD_Grupp10
 
             ShowLibrary.ListShow(show);
             ShowLibrary.QueueShow(show);
+            */
+
+                // Add 10 Demo Shows
+            for (int i = 1; i < 11; i++)
+            {
+                Show DemoShow = new Show("Number: " + i.ToString(), 60, "2022-12-24");
+                ShowLibrary.ListShow(DemoShow);
+                ShowLibrary.QueueShow(DemoShow);
+            }
+
+            Console.WriteLine("# ADD COMPLETED #");
         }
 
 

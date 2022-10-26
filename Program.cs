@@ -11,33 +11,32 @@ namespace ProjektOOD_Grupp10
         static void Main(string[] args)
         {
             // Pre-Created Objects for DEMO purpose
-
                 // Demo Customer
             Customer DemoCustomer = new Customer(1, "DemoCustomer", "customer@mail.se", "070-123 45 67");
-            DemoCustomer.GetCustomerInfo();
+
                 // Demo Admin
             Admin DemoAdmin = new Admin(1, "DemoAdmin", "admin@mail.se", "010-111 22 33");
 
-                // Add 100 Demo Shows
-            //for (int i = 1; i < 101; i++)
-            //{
-            //    //string name = "Number" + i.ToString();
-            //    Show DemoShow = new Show("Number" + i.ToString(), 60, "2022-12-24");
-            //    ShowLibrary.ListShow(DemoShow);
-            //}
-
-            // Admin Methods Demo
-            //DemoAdmin.AddShow();
-
-            // Customer Methods Demo
+                // Customer Methods Demo
+            DemoCustomer.GetCustomerInfo();
             DemoCustomer.ViewAvailableShows();
+            Console.WriteLine(""); // Empty Line
 
-                // ShowLibrary Method to display shows
+                // Admin Methods Demo
+            DemoAdmin.GetAdminInfo();
+            DemoAdmin.AddShow();
+            Console.WriteLine(""); // Empty Line
+            
+            // ShowLibrary Method to display shows
+                //List
             Console.WriteLine("Shows in list: ");
             ShowLibrary.DisplayShowList();
+            Console.WriteLine(""); // Empty Line
 
+                //Queue
             Console.WriteLine("Shows in queue: ");
             ShowLibrary.DisplayShowQueue();
+            Console.WriteLine(""); // Empty Line
         }
     }
 }

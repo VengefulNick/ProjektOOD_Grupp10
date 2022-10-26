@@ -11,9 +11,7 @@ namespace ProjektOOD_Grupp10
         internal void ViewAvailibleShows()
         {
             Console.WriteLine("Current available shows: ");
-            ShowLibrary.DisplayShowList();
-
-            //ShowLibrary.DisplayShowQueue();
+            Console.WriteLine("");
         }
     }
 }
