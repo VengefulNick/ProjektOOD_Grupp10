@@ -9,17 +9,19 @@ namespace ProjektOOD_Grupp10
 {
     internal class Ticket
     {
+        private List<object> TicketList = new List<object>();
+
+        private Queue<object> OrderQueue = new Queue<object>();
+
         private int TicketId { get; set; }
         private string OrderDate { get; set; }
         private int Price { get; set; }
 
-        public Ticket(int TicketId, int AmountOfTickets)
+        // Methods
+        public void CreateTicket(int id, int amountoftickets)
         {
-            this.TicketId = TicketId;
-            OrderDate = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
-            this.Price = 100;
+            // Recursive creation of amount of tickets
         }
-
         public int GetTicketId()
         {
             return this.TicketId;
@@ -32,5 +34,7 @@ namespace ProjektOOD_Grupp10
         {
             return this.Price;
         }
+
+
     }
 }

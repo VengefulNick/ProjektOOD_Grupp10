@@ -13,30 +13,31 @@ namespace ProjektOOD_Grupp10
             // Pre-Created Objects for DEMO purpose
 
                 // Demo Customer
-            Customer DemoCustomer = new Customer("DemoCustomer", "customer@mail.se", "070-123 45 67");
+            Customer DemoCustomer = new Customer(1, "DemoCustomer", "customer@mail.se", "070-123 45 67");
+            DemoCustomer.GetCustomerInfo();
                 // Demo Admin
-            Admin DemoAdmin = new Admin("DemoAdmin", "admin@mail.se", "010-111 22 33");
+            Admin DemoAdmin = new Admin(1, "DemoAdmin", "admin@mail.se", "010-111 22 33");
 
                 // Add 100 Demo Shows
-            for (int i = 1; i < 101; i++)
-            {
-                //string name = "Number" + i.ToString();
-                Show DemoShow = new Show("Number" + i.ToString(), 60, "2022-12-24");
-                ShowLibrary.ListShow(DemoShow);
-            }
+            //for (int i = 1; i < 101; i++)
+            //{
+            //    //string name = "Number" + i.ToString();
+            //    Show DemoShow = new Show("Number" + i.ToString(), 60, "2022-12-24");
+            //    ShowLibrary.ListShow(DemoShow);
+            //}
 
-                // Admin Methods Demo
+            // Admin Methods Demo
             //DemoAdmin.AddShow();
 
             // Customer Methods Demo
-            DemoCustomer.ViewAvailibleShows();
+            DemoCustomer.ViewAvailableShows();
 
                 // ShowLibrary Method to display shows
-            //Console.WriteLine("Shows in list: ");
-            //ShowLibrary.DisplayShowList();
+            Console.WriteLine("Shows in list: ");
+            ShowLibrary.DisplayShowList();
 
-            //Console.WriteLine("Shows in queue: ");
-            //ShowLibrary.DisplayShowQueue();
+            Console.WriteLine("Shows in queue: ");
+            ShowLibrary.DisplayShowQueue();
         }
     }
 }

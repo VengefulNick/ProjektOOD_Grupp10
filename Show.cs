@@ -10,7 +10,6 @@ namespace ProjektOOD_Grupp10
 {
     internal class Show
     {
-
         private string ShowName { get; set; }
         private int ShowDuration { get; set; }
         private string ReleaseDate { get; set; }
@@ -26,7 +25,6 @@ namespace ProjektOOD_Grupp10
         {
             return this.ShowName;
         }
-
         public int GetDuration()
         {
             return this.ShowDuration;

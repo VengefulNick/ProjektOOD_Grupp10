@@ -12,8 +12,9 @@ namespace ProjektOOD_Grupp10
     {
         //List<object> ShowList = new List<object>();
 
-        public Admin(string name, string email, string phone)
+        public Admin(int id, string name, string email, string phone)
         {
+            this.Id = id;
             this.Name = name;
             this.Email = email;
             this.Phone = phone;

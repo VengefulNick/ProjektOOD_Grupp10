@@ -8,13 +8,15 @@ namespace ProjektOOD_Grupp10
 {
     internal class ScheduleShow
     {
+        private List<object> ScheduledShows = new List<object>();
         private int ScheduleId { get; set; }
         private DateTime StartTime { get; set; }
-
-        public ScheduleShow(int ScheduleId, DateTime StartTime)
+        private int TotalTickets { get; set; }
+        public ScheduleShow(int ScheduleId, DateTime StartTime, int totalTickets)
         {
             this.ScheduleId = ScheduleId;
             this.StartTime = StartTime;
+            this.TotalTickets = totalTickets;
         }
     }
 }
