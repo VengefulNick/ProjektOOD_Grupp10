@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,27 +9,35 @@ namespace ProjektOOD_Grupp10
 {
     internal class Customer : Person
     {
-        public Customer(int id, string name, string email, string phone)
+        static int IdCounter = 0;
+        public Customer(string Name)
         {
-            this.Id = id;
-            this.Name = name;
-            this.Email = email;
-            this.Phone = phone;
+            IdCounter += 1;
+            Id = IdCounter;
+            this.Name = Name;
         }
 
+        // CRUD - READ
+        public void ViewAvailableShows()
+        {
+            Console.WriteLine("Current available shows: ");
+            ShowLibrary.DisplayShowList();
+            Console.WriteLine("");
+
+            Console.WriteLine("Current available queue: ");
+            ShowLibrary.DisplayShowQueue();
+            Console.WriteLine("");
+        }
+            // WHOAMI
         public void GetCustomerInfo()
         {
-            Console.WriteLine($"Id: {this.Id} | Name: {this.Name} | Email: {this.Email} | Phone: {this.Phone}");
+            Console.WriteLine($"Id: {this.Id} | Name: {this.Name}");
         }
-
-        public void ViewAvailableShows() {}
 
         public void BuyTicket()
         {
-            Console.WriteLine("What show do you wanna book tickets for?: ");
-            int show = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Select amount of tickets you would like to buy(1-5): ");
-            int amount = Convert.ToInt32(Console.ReadLine());
+            // Code to Buy ticket
+            // Tidsgräns på 10minuter att köpa
         }
 
         public void CancelTicket()

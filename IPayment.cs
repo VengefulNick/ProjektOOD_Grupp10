@@ -8,6 +8,6 @@ namespace ProjektOOD_Grupp10
 {
     internal interface IPayment
     {
-        // CODE
+        public void Pay();
     }
 }

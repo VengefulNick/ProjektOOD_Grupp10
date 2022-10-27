@@ -7,11 +7,10 @@ using System.Xml;
 
 namespace ProjektOOD_Grupp10
 {
-    internal abstract class Person : IShowLibrary
+    // EXAMPLE OF ABSTRACTION
+    abstract class Person
     {
-        protected int? Id { get; set; }
+        protected int Id { get; set; }
         protected string? Name { get; set; }
-        protected string? Email { get; set; }
-        protected string? Phone { get; set; }
     }
 }

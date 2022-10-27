@@ -20,7 +20,7 @@ namespace ProjektOOD_Grupp10
         // Methods
         public void CreateTicket(int id, int amountoftickets)
         {
-            // Recursive creation of amount of tickets
+            // Recursiv algoritm som kommer att köras utifrån hur många biljetter kunden vill köpa.
         }
         public int GetTicketId()
         {

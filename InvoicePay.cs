@@ -9,5 +9,9 @@ namespace ProjektOOD_Grupp10
     internal class InvoicePay : IPayment
     {
         // InVoice payment code goes here
+        public void Pay()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
