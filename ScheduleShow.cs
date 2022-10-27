@@ -10,9 +10,9 @@ namespace ProjektOOD_Grupp10
     {
         private List<object> ScheduledShows = new List<object>();
         private int ScheduleId { get; set; }
-        private DateTime StartTime { get; set; }
+        private string StartTime { get; set; }
         private int TotalTickets { get; set; }
-        public ScheduleShow(int ScheduleId, DateTime StartTime, int totalTickets)
+        public ScheduleShow(int ScheduleId, string StartTime, int totalTickets)
         {
             this.ScheduleId = ScheduleId;
             this.StartTime = StartTime;
