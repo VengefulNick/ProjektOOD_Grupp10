@@ -10,21 +10,20 @@ namespace ProjektOOD_Grupp10
     {
         static void Main(string[] args)
         {
-            // Pre-Created Objects for DEMO purpose
-
+            // Pre-Create Objects for DEMO purpose
                 // Demo Customer
             Customer DemoCustomer = new Customer("DemoCustomer");
 
-            // Demo Admin
+                // Demo Admin
             Admin DemoAdmin = new Admin("DemoAdmin");
 
-            // Admin Methods Demo
-            DemoAdmin.GetAdminInfo();
+                // Admin Methods Demo
+            DemoAdmin.GetInfo();
             DemoAdmin.AddShow();
             Console.WriteLine(""); // Empty Line
 
-            // Customer Methods Demo
-            DemoCustomer.GetCustomerInfo();
+                // Customer Methods Demo
+            DemoCustomer.GetInfo();
 
             DemoCustomer.ViewAvailableShows();
             Console.WriteLine(""); // Empty Line

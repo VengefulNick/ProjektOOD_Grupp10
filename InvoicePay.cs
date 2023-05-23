@@ -11,6 +11,7 @@ namespace ProjektOOD_Grupp10
         // InVoice payment code goes here
         public void Pay()
         {
+            // CODE TO HANDLE PAYMENT FOR INVOICE
             throw new NotImplementedException();
         }
     }

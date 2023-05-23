@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjektOOD_Grupp10
 {
+    // EXAMPLE OF INHERITANCE
     internal class Customer : Person
     {
         static int IdCounter = 0;
@@ -15,6 +16,13 @@ namespace ProjektOOD_Grupp10
             IdCounter += 1;
             Id = IdCounter;
             this.Name = Name;
+        }
+
+        // WHOAMI - EXAMPLE OF POLYMORPHISM
+        public new void GetInfo()
+        {
+            Console.WriteLine("Customer info: ");
+            Console.WriteLine($"Id: {this.Id} | Name: {this.Name}");
         }
 
         // CRUD - READ
@@ -28,21 +36,15 @@ namespace ProjektOOD_Grupp10
             ShowLibrary.DisplayShowQueue();
             Console.WriteLine("");
         }
-            // WHOAMI
-        public void GetCustomerInfo()
-        {
-            Console.WriteLine($"Id: {this.Id} | Name: {this.Name}");
-        }
-
         public void BuyTicket()
         {
             // Code to Buy ticket
             // Tidsgräns på 10minuter att köpa
         }
-
         public void CancelTicket()
         {
             //Code to Cancel Ticket
         }
+
     }
 }

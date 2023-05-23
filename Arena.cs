@@ -13,6 +13,9 @@ namespace ProjektOOD_Grupp10
         private int SeatRows { get; set; }
         private int SeatCols { get; set; }
 
+        // COMPOSITION
+        private ArenaSeats arenaseats;
+
         public Arena(string arenaName, int SeatRows, int SeatCols)
         {
             this.ArenaName = arenaName;

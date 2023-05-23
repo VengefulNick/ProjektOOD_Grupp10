@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
@@ -19,9 +18,10 @@ namespace ProjektOOD_Grupp10
             this.Name = Name;
         }
 
-            // WHOAMI
-        public void GetAdminInfo() 
+            // WHOAMI - EXAMPLE OF POLYMORPHISM
+        public new void GetInfo() 
         {
+            Console.WriteLine("Admin info: ");
             Console.WriteLine($"Id: {this.Id} | Name: {this.Name}");
         }
 
@@ -35,7 +35,9 @@ namespace ProjektOOD_Grupp10
             for (int i = 1; i < 11; i++)
             {
                 Show DemoShow = new Show("Number: " + i.ToString(), "2022-12-24");
+                // Option List
                 ShowLibrary.ListShow(DemoShow);
+                // Option Que
                 ShowLibrary.QueueShow(DemoShow);
             }
             Console.WriteLine("# ADD COMPLETED #");

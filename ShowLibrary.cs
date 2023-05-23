@@ -18,7 +18,7 @@ namespace ProjektOOD_Grupp10
         {
             foreach (Show show in ShowList)
             {
-                Console.WriteLine($"Name: {show.GetName()} Duration: {show.GetDuration()}min Release date: {show.GetRelease()}");
+                Console.WriteLine($"Name: {show.GetName()} Release date: {show.GetRelease()}");
             }
         }
 
@@ -33,7 +33,7 @@ namespace ProjektOOD_Grupp10
         {
             foreach (Show show in ShowQueue)
             {
-                Console.WriteLine($"Name: {show.GetName()} Duration: {show.GetDuration()}min Release date: {show.GetRelease()}");
+                Console.WriteLine($"Name: {show.GetName()} Release date: {show.GetRelease()}");
             }
         }
 
